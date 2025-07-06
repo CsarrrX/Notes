@@ -1,4 +1,4 @@
-# 📚 Repositorio de Conocimiento General — Notas en Xournal++
+# 📚 Repositorio de Conocimiento General - Notas en Xournal++
 
 Este repositorio contiene mis apuntes personales tomados con [Xournal++](https://github.com/xournalpp/xournalpp), organizados por temas relacionados con mi formación en **Actuaría** y áreas afines.
 
