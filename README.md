@@ -15,5 +15,5 @@ Este repositorio contiene mis apuntes personales tomados con [Xournal++](https:/
 
 ## 🛠️ Formato
 
-- Todos los archivos están en formato `.xopp`, el nativo de Xournal++.
-- Algunos temas pueden incluir versiones exportadas en PDF (`.pdf`) para facilitar la lectura rápida.
+- Todos los archivos están en formato markdown especifico para obsidian. 
+- Algunos temas pueden incluir versiones exportadas en PDF (`.pdf`) para facilitar la lectura rápida. (Solo notas a mano)
