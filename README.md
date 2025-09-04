@@ -1,2 +1,6 @@
-# Notes
-Repositorio de conocimiento general, principalmente enfocado en actuaría, especificamente en las materias del plan de estudios 2017 de la UDLAP.
+## Repositorio de conocimiento general
+---
+Este repositorio es una versión mas concisa de mis notas personales de las materias de la carrera, es de notar que principalmente son los resultados mas importantes de las materias en cuestión, estan escritos en LaTeX, cada materia tiene un archivo .tex principal, carpetas dividiendo la materia en los principales temas, y dentro de esas carpetas archivos .tex con subtemas. Es importante recalcar que estas notas pueden tener errores, también que son personales y no buscan reemplazar de ninguna forma el contenido de los libros de clase, ni las "lectures" de estas mismas.
+## Flujo general del repositorio
+---
+El repositorio esta destinado principalmente a las materias que son matemáticamente densas, por lo tanto economía y finanzas quedan en segundo plano (puede que ni siquiera incluya las notas), el repositorio cuenta con un índice general de las materias y sus principales sub-divisiones, recordemos que cada materia ya tiene su indice análitico bien definido. Cada una de las materias tiene una carpeta para material extra como figuras y diagramas. También hay un **preamble.tex** en el que ya vienen definidos los diferentes entornos y configuraciones de mis notas de LaTeX, feel free to use it. 
