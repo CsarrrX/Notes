@@ -4,9 +4,9 @@
 \input{../../preamble.tex}
 
 % Información del documento
-\title{Sucesiones}
-\author{Cesar Perez Amador}
-\date{\today}
+\title{\Huge Sucesiones}
+\author{Cálculo 2 - MAT2012}
+\date{Otoño 2025}
 
 \begin{document}
 
@@ -56,10 +56,10 @@
 
 \section{Teoremas}
 
-\begin{teorema}{Conversión a función de los reales}{thm1}
+\begin{teorema}{Sucesión de funciones}{thm1}
     Sea la sucesión $a_n$, si:
     \[ 
-        \lim_{n \to \infty} f(x) = L \text{ y } f(n) = a_n, \forall n \ in \N
+        \lim_{n \to \infty} f(x) = L \text{ y } f(n) = a_n, \forall n \in \N
     \]
     entonces
     \[ 
@@ -67,12 +67,19 @@
     \]
 \end{teorema}
 
-\begin{teorema}{Otro teorema}{teo2}
-Todo número primo mayor que 2 es impar.
+\begin{teorema}{Álgebra de sucesiones}{thm2}
+    Sea $\{a_n\}$ y $\{b_n\}$ sucesiones con límites existentes, respectivamente cada límite vale $L_1$ y $L_2$ y $c\in\mathbb{R}$. Se cumple:
+    \[
+    \begin{aligned}
+    &\text{Suma/Resta:} & \lim_{n \to \infty} (a_n \pm b_n) &= \lim_{n \to \infty} a_n \pm \lim_{n \to \infty} b_n,\\
+    &\text{Producto por escalar:} & \lim_{n \to \infty} (c\,a_n) &= c\,\lim_{n \to \infty} a_n,\\
+    &\text{Producto:} & \lim_{n \to \infty} (a_n b_n) &= (\lim_{n \to \infty} a_n)(\lim_{n \to \infty} b_n),\\
+    &\text{Cociente:} & \lim_{n \to \infty} \frac{a_n}{b_n} &= \frac{\lim\limits_{n \to \infty} a_n}{\lim\limits_{n \to \infty} b_n}, \quad \lim_{n\to\infty} b_n \neq 0. \\
+    &\text{Potencia:} & \lim_{n \to \infty} (a_n)^m &= L_1^m,\\
+    &\text{Continuidad ($f$ continua): } & \lim_{n \to \infty}f(a_n) = f(L_1) \\
+    \end{aligned}
+    \]
 \end{teorema}
 
-\begin{proposicion}{Otra proposición}{prop2}
-Si $x \in \R$ y $x^2 = 0$, entonces $x=0$.
-\end{proposicion}
 
 \end{document}
