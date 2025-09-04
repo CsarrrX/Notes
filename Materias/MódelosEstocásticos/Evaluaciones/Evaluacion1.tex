@@ -1,0 +1,170 @@
+\documentclass{article}
+\usepackage{amsmath} 
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage[a4paper, bottom=3cm]{geometry}
+
+\title{Stochastic Models - Homework 1}
+\author{César Pérez, Luciana Hernandez, Dulce María San Martín}
+\date{September 2025}
+
+\begin{document}
+
+\theoremstyle{definition}
+\newtheorem{solutions}{Solution}
+\maketitle
+
+\section*{Solutions}
+    \begin{minipage}{\linewidth}
+        \begin{solutions}
+            We want the number of women that are single and young, if we denote young = $J$, men = $H$, married = $C$, then we want $\#(J \cap H^{c} \cap C^c)$ that is:
+            \[
+                \#J - \#(J \cap H) - \#(J \cap C) + \#(J \cap H \cap C)
+            \]
+            Since we are taking the young people, eliminating if they are men or married, since there are young married men, and we eliminated the young married and the young men we eliminated two times the intersection of the 3, hence we have to add the intersection of these 3 (to avoid double eliminating young people). Then we have:
+            \[
+                3000 - 1320 - 1400 + 600 = 880
+            \]
+        \end{solutions}
+        \medskip
+    \end{minipage}
+    \begin{minipage}{\linewidth}
+        \begin{solutions}
+            For $P$ to be a probability measure, the following statements have to be true: $P(A) \geq 0, P(\Omega) = 1$ and the additive property, which already is assumed to be true in the problem.
+            Also we have that 
+            \[
+                P(\{k\}) = \sum_{k \in A}P(\{k\}) = P(k_1) + P(k_2) + ..., 
+            \]
+            where $k_1, k_2, ... \in A$.
+                \begin{enumerate}
+                    \item $P(A) \geq 0$. We know that since $\Omega = \mathbb{N}, k \geq 1$, and $P(\{k\}) = \frac{1}{k(k+1)}$, we always have positive numbers, whose sum is always positive. Hence $P(A) \geq 0, \forall A \in \mathcal{F}$
+                    \item $P(\Omega) = 1$.
+                    We have that 
+                    \[
+                        P(\Omega) = \sum_{k \in \Omega} P(\{k\}).
+                    \]
+                    Since $\Omega = \mathbb{N}$, we can write 
+                    \[
+                        P(\Omega) = P(1) + P(2) + \cdots 
+                        = \sum_{i = 1}^{\infty} \frac{1}{i(i + 1)}.
+                    \]
+                    This is a telescopic series that converges to $1$; hence, $P(\Omega) = 1$.
+                \end{enumerate}
+            Since we proved Kolmogorov's axiom 1 and 2 hold, and axiom 3 (additive property) is assumed in the problem, $P$ is a probability measure. 
+        \end{solutions}
+    \end{minipage}
+
+    \begin{minipage}{\linewidth}
+        \begin{solutions}
+            For P to be a probability, the following statements have to be true $P(A) \geq 0, P(\Omega) = 1$, and the additive property: if $A_ 1, A_2, A_3, ...$ are pairwise disjoint, then: 
+                \[  
+                    P(\bigcup_{i = 1}^{\infty} A_i) = \sum_{i = 1}^{\infty} P(A_i)
+                \]
+                \begin{enumerate}
+                    \item $P(A) \geq 0$ We have: 
+                    \[
+                        P(A) =\int_{A}f(x)dx = \int_{\mathbb{R}}1_A(x)f(x)dx
+                    \]
+                    where $1_A(x)$ is the indicator function of $A$, now, if $x \notin A$ the integral becomes 0, and if $x \in A$ we have the integral of $f(x)$ and since $f(x)$ is always positive, the integral is always positive. Hence $P(A) \geq 0, \forall A \in \mathcal{F}$.
+                    \item $P(\Omega) = 1$ We have: 
+                    \[
+                        P(\Omega) = \int_{\mathbb{R}} 1_\Omega(x) f(x) dx
+                    \]
+                    But since $\Omega = \mathbb{R}$ and we are integrating over $\mathbb{R}$ then the indicator function of $\Omega$ is always equal to 1, then we are left with:
+                    \[
+                        \int_{-\infty}^{0} f(x)dx + \int_{0}^{1}f(x)dx + \int_{1}^{\infty} f(x)dx
+                    \]
+                    By definition of our function $f(x)$ we have that the first and last integral are equal to 0, hence we are left with:
+                    \[
+                        \int_{0}^{1} 2xdx = x^2\Big|_0^1 = 1
+                    \]
+                    Hence $P(\Omega) = 1$.
+                    \item Additive property. We have that:
+                    \[
+                        P(\bigcup_{i = 1}^{\infty}A_i) =\int_{\bigcup_{i = 1}^{\infty}A_i} f(x)dx = \int_{\mathbb{R}} 1_{\bigcup_{i = 1}^{\infty} A_i}(x) f(x)dx 
+                    \]
+                    Since $A_1, A_2, A_3, ...$ are disjoint events we have that:
+                    \[
+                        1_{\bigcup_{i = 1}^{\infty} A_i}(x) = \sum_{i = 1}^{\infty}1_{A_i}(x)
+                    \]
+                    Then:
+                    \[
+                        \int_{\mathbb{R}} 1_{\bigcup_{i = 1}^{\infty} A_i}(x) f(x)dx = \int_{\mathbb{R}} \sum_{i = 1}^{\infty}1_{A_i}(x)f(x)dx =  \sum_{i = 1}^{\infty} \int_{\mathbb{R}} 1_{A_i}(x)f(x)dx = \sum_{i = 1}^{\infty} P(A_i) 
+                    \]
+                    Hence the additive property holds.
+                    It is worth mentioning that we can interchange sum and integral because they are positive always. 
+                \end{enumerate}
+                Since all Kolmogorov's axioms hold, $P$ is a probability measure. 
+        \end{solutions}
+    \end{minipage}
+    \begin{minipage}{\linewidth}
+        \begin{solutions}
+            We want to proof: 
+            \[
+                P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A \cap B) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)
+            \]
+            \begin{proof}
+                We can take the first side of the equation and start operating with the previously proved propositions of axiomatic probability: 
+                \begin{gather*}
+                    P(A \cup B \cup C) = P((A \cup B) \cup C) = P(A \cup B) + P(C) - P((A \cup B) \cap C)\\ 
+                    = P(A) + P(B) - P(A \cup B) + P(C) - P((A \cup B) \cap C)\\
+                    = P(A) + P(B) - P(A \cup B) + P(C) - P((A \cap C) \cup (B \cap C))\\
+                    = P(A) + P(B) - P(A \cup B) + P(C) - (P(A \cap C) + P(B \cap C) - P((A \cap B) \cap (A \cap C)))\\
+                    = P(A) + P(B) - P(A \cup B) + P(C) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)\\
+                    = P(A) + P(B) + P(C)- P(A \cup B) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)
+                \end{gather*}
+            \end{proof}
+            \medskip
+        \end{solutions}
+    \end{minipage}
+    \begin{minipage}{\linewidth}
+        \begin{solutions}
+            We have that $P(A) = 0.7, P(B) = 0.9$, and have to calculate the maximum value $P(A \cup B) - P(A \cap B)$ can take. 
+            We have that:
+            \[
+                P(A \cup B) = P(A) + P(B) - P(A \cap B) = 0.7 + 0.9 - P(A \cap B)
+            \]
+            Since we have that $0 \leq P(A \cup B) \leq 1$, we have that $0.7 + 0.9 - P(A \cap B) \leq 1 \implies 0.6 \leq P(A \cap B)$, also, applying the property of inequalities of probabilities, we know that:
+            \[
+                P(A \cap B) \leq (\min{\{P(A), P(B)\}} = 0.7)
+            \]
+            Then to maximize the result we can take the minimum value of the two we know less or equal than $P(A \cap B)$ which is $\min{\{0.6, 0.7\}} = 0.6$. Hence the maximum value of the expression is:
+            \[
+                P(A \cup B) - P(A \cap B) = 1 - 0.6 = 0.4
+            \]
+            \medskip
+        \end{solutions}
+    \end{minipage}
+    \begin{minipage}{\linewidth}
+        \begin{solutions}
+            If a die is rolled 4 times, what is the probability of getting 6 at least once: since we have the experiment of rolling a die and we are repeating it 4 times, each with a classical probability of $\frac{1}{6}$, we can calculate the probability of the complement and use it to get the probability, let $A$ be "the result of the die is 6":
+            \[
+                P(A^c) = \frac{5}{6} 
+            \]
+            Now since we are repeating the experiment 4 times we have: 
+            \[
+                \frac{5}{6}  \cdot \frac{5}{6} \cdot \frac{5}{6} \cdot \frac{5}{6} = (\frac{5}{6})^{4} = \frac{625}{1296}
+            \]
+            To calculate the probability of the original event we can use the property of the probability of the complement of an event:
+            \[
+                1 - \frac{625}{1296} = \frac{671}{1296}
+            \]
+            \medskip
+        \end{solutions}   
+    \end{minipage}
+    \begin{minipage}{\linewidth}
+        \begin{solutions}
+            If $P(A) = \frac{1}{3} \land P(B^c) = \frac{1}{4}$ is it possible for $A$ and $B$ to be disjoint? First we calculate the probability of $B$ by using the property of the complement: $(B^c)^c = B$, since $P(B^c) = \frac{1}{4}, P(B) = 1 - \frac{1}{4} = \frac{3}{4}$. Then we can check if they are disjoint by calculating the probability of the union.
+            \[
+                P(A \cup B) = P(A) + P(B) - P(A \cap B) = \frac{1}{3} + \frac{3}{4} - P(A \cap B)= \frac{13}{12} - P(A \cap B) 
+            \]
+            They can't be disjoint since $P(A \cup B) \leq 1$ and if $A$ and $B$ are disjoint sets, then
+            \[
+                P(A \cap B) = P(\emptyset) = P(0) \implies P(A \cup B) = \frac{13}{12} - 0 = \frac{13}{12}
+            \]
+            then $P(A \cup B) > 1$, but this can't happen.
+            \medskip           
+        \end{solutions}
+    \end{minipage}
+\end{document}
+
