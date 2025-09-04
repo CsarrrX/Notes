@@ -1,7 +1,6 @@
 \usepackage[most]{tcolorbox}
 \usepackage{amsmath, amsthm, amssymb}
-
-\geometry{margin=2.5cm}
+\usepackage[margin=2.5cm]{geometry}
 
 \tcbuselibrary{theorems}
 
@@ -11,6 +10,8 @@
 {colback=green!5!white, colframe=green!75!black, fonttitle=\bfseries}{teo}
 \newtcbtheorem[number within=section]{proposicion}{Proposición}%
 {colback=yellow!10!white, colframe=yellow!50!black, fonttitle=\bfseries}{prop}
+\newtcbtheorem[number within=section]{notacion}{Notación}%
+{colback=blue!5!white, colframe=red!75!black, fonttitle=\bfseries}{def}
 
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}

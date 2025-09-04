@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1756997969.6778 "/home/CesarrrX/Notes/Materias/MódelosEstocásticos/Evaluaciones/Evaluacion1.tex" "build/Evaluacion1.pdf" "Evaluacion1" 1756997970.62139 0
-  "/home/CesarrrX/Notes/Materias/MódelosEstocásticos/Evaluaciones/Evaluacion1.tex" 1756997969.25336 9592 04707cb9504cdee471f3a8b40e00cffb ""
+["pdflatex"] 1757015679.14172 "/home/CesarrrX/Notes/Materias/MódelosEstocásticos/Evaluaciones/Evaluacion1.tex" "build/Evaluacion1.pdf" "Evaluacion1" 1757015679.99229 0
+  "/home/CesarrrX/Notes/Materias/MódelosEstocásticos/Evaluaciones/Evaluacion1.tex" 1757015678.68086 9732 616429e743ac208ef371547059f4e228 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -61,8 +61,8 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1737590400 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1756972796.51686 4602002 62dba5fc29055c16380d7393a2adb07a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1756972241 7753797 b2b863567f9eeacfe34d715ddb9eab30 ""
-  "Evaluacion1.tex" 1756997969.25336 9592 04707cb9504cdee471f3a8b40e00cffb ""
-  "build/Evaluacion1.aux" 1756997970.42936 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
+  "Evaluacion1.tex" 1757015678.68086 9732 616429e743ac208ef371547059f4e228 ""
+  "build/Evaluacion1.aux" 1757015679.82086 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
   (generated)
   "build/Evaluacion1.aux"
   "build/Evaluacion1.log"

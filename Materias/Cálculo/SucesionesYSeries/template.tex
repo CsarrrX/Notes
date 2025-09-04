@@ -1,0 +1,71 @@
+\documentclass[12pt,a4paper]{article}
+
+% Incluye preámbulo
+\input{../../preamble.tex}
+
+% Información del documento
+\title{Sucesiones}
+\author{Cesar Perez Amador}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Definiciones}
+
+\begin{definicion}{Función sobreyectiva}{def1}
+    Sea $f: A \to B$. Decimos que $f$ es sobreyectiva si 
+    \[
+        \forall b \in B, \exists a \in A: f(a) = b
+    \]
+\end{definicion}
+
+\begin{definicion}{Sucesión}{def2}
+    Una sucesión es una función sobre los naturales de la forma $f: \N \to \R$ 
+\end{definicion}
+
+\begin{notacion}{}{ntc1}
+    Denotamos las sucesiones de las siguientes formas:
+    \[ 
+        a_n \equiv \{a_n\} \equiv \{a_n\}_{n = 1}^{\infty} \equiv f(n) \equiv (a_n)
+    \]
+\end{notacion}
+    
+\begin{definicion}{Límite de una sucesión}{def3}
+    Decimos que la sucesión $a_n$ tiene límite L, denotado por
+    \[ 
+        \lim_{n \to \infty} a_n = L
+    \]
+    si se da que 
+    \[ 
+        \forall \varepsilon > 0, \exists N \in \N: \text{para } n > N \text{ se cumple } \lvert a_n - L \rvert < \varepsilon
+    \]
+\end{definicion}
+
+\begin{definicion}{Sucesiones de Cauchy}{def4}
+    Decimos que la sucesión $a_n$ tiene límite L, denotado por
+    \[ 
+        \lim_{n \to \infty} a_n = L
+    \]
+    si se da que 
+    \[ 
+        \forall \varepsilon > 0, \exists N \in \N: \lvert a_n - a_{n + 1} \rvert < \varepsilon, \forall m,n > N 
+    \]
+\end{definicion}
+
+\section{Teoremas}
+
+\begin{teorema}{}{thm1}
+Un número primo es un número natural mayor que 1 que solo tiene dos divisores positivos: 1 y él mismo.
+\end{teorema}
+
+\begin{teorema}{Otro teorema}{teo2}
+Todo número primo mayor que 2 es impar.
+\end{teorema}
+
+\begin{proposicion}{Otra proposición}{prop2}
+Si $x \in \R$ y $x^2 = 0$, entonces $x=0$.
+\end{proposicion}
+
+\end{document}
