@@ -5,7 +5,7 @@
 
 % Información del documento
 \title{\Huge Sucesiones}
-\author{Cálculo 2 - MAT2012}
+\author{Cálculo 2 - MAT2012 - César Pérez}
 \date{Otoño 2025}
 
 \begin{document}
@@ -81,5 +81,23 @@
     \]
 \end{teorema}
 
+\begin{teorema}{Criterio del punto fijo}{thm3}
+    Sea $(a_n)$ una sucesión, y supongamos que $\lim_{n \to \infty} = L$. Se cumple que:
+    \[ 
+        \lim_{n \to \infty} a_n = \lim_{n \to \infty} a_{n + 1} = L
+    \]
+    En particular si $a_{n + 1} = f(a_n)$ con $f$ continua, se da que $L = f(L)$
+\end{teorema}
+
+\begin{teorema}{Compresión de sucesiones}{thm4}
+    Si $\lim_{n \to \infty} a_n = L = \lim_{n \to \infty} c_n$ y $a_n \leq b_n \leq c_n$ entonces
+    \[ 
+        \lim_{n \to \infty} b_n = L
+    \]
+\end{teorema}
+
+\begin{teorema}{Convergencia del absoluto}{thm5}
+    Si $\lim_{n \to \infty} \lvert a_n \rvert = L$ entonces $\lim_{n \to \infty} a_n = L
+\end{teorema}
 
 \end{document}
