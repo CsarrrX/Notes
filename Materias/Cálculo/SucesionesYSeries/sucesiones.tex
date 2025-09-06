@@ -13,6 +13,7 @@
 \maketitle
 
 \section{Definiciones}
+Muy informalmente podemos decir que una sucesión es una "lista ordenada" de valores númericos, cada uno relacionado con su índice (un número natural), es decir, una sucesión tiene la forma: $a_n = \{a_1, a_2, a_3, a_4, ...\}$, en donde $a_i \in \R$ para $i \in \N$ para formalizar esta idea, introducimos las siguientes definiciones:
 
 \begin{definicion}{Función sobreyectiva}{def1}
     Sea $f: A \to B$. Decimos que $f$ es sobreyectiva si 
@@ -22,7 +23,7 @@
 \end{definicion}
 
 \begin{definicion}{Sucesión}{def2}
-    Una sucesión es una función sobre los naturales de la forma $f: \N \to \R$ 
+    Una sucesión es una función (sobreyectiva) sobre los naturales de la forma $f: \N \to \R$ 
 \end{definicion}
 
 \begin{notacion}{}{ntc1}
@@ -31,6 +32,8 @@
         a_n \equiv \{a_n\} \equiv \{a_n\}_{n = 1}^{\infty} \equiv f(n) \equiv (a_n)
     \]
 \end{notacion}
+
+El primer gran problema de las sucesiones es encontrar la "regla de asignación" es decir la forma de la función que caracteriza a los terminos $n$ de la sucesión. (Notas de OneNote para los ejemplos). Sin embargo, el problema que se roba el espectaculo es el problema de convergencia de sucesiones. O en otras palabras la existencia del límite: 
     
 \begin{definicion}{Límite de una sucesión}{def3}
     Decimos que la sucesión $a_n$ tiene límite L, denotado por
@@ -82,7 +85,7 @@
 \end{teorema}
 
 \begin{teorema}{Criterio del punto fijo}{thm3}
-    Sea $(a_n)$ una sucesión, y supongamos que $\lim_{n \to \infty} = L$. Se cumple que:
+    Sea $(a_n)$ una sucesión, y supongamos que $\lim_{n \to \infty} a_n = L$. Se cumple que:
     \[ 
         \lim_{n \to \infty} a_n = \lim_{n \to \infty} a_{n + 1} = L
     \]
