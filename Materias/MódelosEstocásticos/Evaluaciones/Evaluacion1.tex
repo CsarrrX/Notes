@@ -109,11 +109,11 @@
                 We can take the first side of the equation and start operating with the previously proved propositions of axiomatic probability: 
                 \begin{gather*}
                     P(A \cup B \cup C) = P((A \cup B) \cup C) = P(A \cup B) + P(C) - P((A \cup B) \cap C)\\ 
-                    = P(A) + P(B) - P(A \cup B) + P(C) - P((A \cup B) \cap C)\\
-                    = P(A) + P(B) - P(A \cup B) + P(C) - P((A \cap C) \cup (B \cap C))\\
-                    = P(A) + P(B) - P(A \cup B) + P(C) - (P(A \cap C) + P(B \cap C) - P((A \cap B) \cap (A \cap C)))\\
-                    = P(A) + P(B) - P(A \cup B) + P(C) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)\\
-                    = P(A) + P(B) + P(C)- P(A \cup B) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)
+                    = P(A) + P(B) - P(A \cap B) + P(C) - P((A \cup B) \cap C)\\
+                    = P(A) + P(B) - P(A \cap B) + P(C) - P((A \cap C) \cup (B \cap C))\\
+                    = P(A) + P(B) - P(A \cap B) + P(C) - (P(A \cap C) + P(B \cap C) - P((A \cap B) \cap (A \cap C)))\\
+                    = P(A) + P(B) - P(A \cap B) + P(C) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)\\
+                    = P(A) + P(B) + P(C)- P(A \cap B) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)
                 \end{gather*}
             \end{proof}
             \medskip
@@ -218,7 +218,7 @@
                 \[
                 4!\cdot 2!\cdot 2! = 96
                 \]
-                Therefore, we can create \textbf{96} passwords where $A$ is before of $B$ and $C$ is before $D$.
+                Therefore, we can create \textbf{96} passwords where $A$ and $B$ are together and $C$ and $D$ are together.
                 
             \end{enumerate}
             \medskip
@@ -244,7 +244,7 @@
                 \binom{n}{3} = \frac{n!}{(n-3)!3!}= \frac{\mathbf{(n)(n-1)(n-2)}}{\mathbf{6}}
                 \]
 
-                \item ) How many possible choices can be made if 2 of the 3 students are asked to belong to the same group, and the other to belong to a different group?
+                \item How many possible choices can be made if 2 of the 3 students are asked to belong to the same group, and the other to belong to a different group?
                 If two are in the same group:
                 \[
                     \binom{n}{2} = \frac{n!}{(n-2)!\cdot2!} = \frac{\mathbf{(n)\cdot(n-1)}}{\mathbf{2}}
@@ -277,12 +277,12 @@
             Then the cardinality of A:
             \[
             \#A = 13\cdot4\cdot12\cdot6
-            \]We know that,
+            \]We know that, since we are looking for ways of acommodating 52 cards in a hand of 5 we have: 
             \[
-            \Omega = 52!
+                \Omega = \binom{52}{5} 
             \]Therefore, the classical probability of getting a full house is:
             \[
-            \mathbf{P(A)} = \frac{\mathbf{13\cdot4\cdot12\cdot6}}{\mathbf{52!}} = \frac{\mathbf{3744}}{\mathbf{52!}}
+                \mathbf{P(A)} = \frac{\mathbf{13\cdot4\cdot12\cdot6}}{\mathbf{\binom{52}{5}}} = \frac{\mathbf{3744}}{\mathbf{\binom{52}{5}}}
             \]
             \medskip
         \end{solutions}
@@ -369,7 +369,7 @@
             \[ 
                 \frac{9}{17} \cdot \frac{8}{16} \cdot \frac{7}{15} \cdot \frac{6}{14} \cdot \frac{5}{13} = \frac{63}{3094}
             \]
-            \noindent b) We can calculate this probability by making the 4 balls a single "block", and we also need the cardinality of $\Omega$:
+            \noindent b) We can calculate this probability by making the 4 balls a single "block" remembering that the balls are indistinguishable, and we also need the cardinality of $\Omega$:
             \[ 
                 \#\Omega = \frac{17!}{4! \cdot 8! \cdot 5!}, \# A = \frac{14!}{5! \cdot 8!} 
             \]
