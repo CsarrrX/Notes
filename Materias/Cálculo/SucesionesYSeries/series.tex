@@ -62,6 +62,7 @@ Sin embargo la definición de la serie, no nos determina su convergencia, para e
 \end{definicion} 
 
 \subsection{Criterios de la convergencia}
+Para determinar la convergencia de una serie tenemos diferentes criterios que podemos utilizar, el primer criterio es la condición para la convergencia de series, pero el verdadero uso es la contrarrecíproca del teorema.
 \begin{teorema}{Criterio necesario}{crit1}
     Si la serie 
     \[
@@ -80,6 +81,10 @@ Sin embargo la definición de la serie, no nos determina su convergencia, para e
     entonces la serie 
     \(\sum_{n=1}^{\infty} a_n\) no converge.
 \end{teorema}
+
+\begin{nota}
+    Si el limite es exactamente $0$ no podemos utilizar la contrarrecíproca (también llamada criterio de la divergencia) ya que se vuelve no concluyente, (recordemos que es una implicación). 
+\end{nota}
 
 \begin{teorema}{Prueba de la integral}{crit2}
     Suponga que $f$ es continua, positiva y decreciente en un intervalo $[1, \infty)$.  
@@ -119,7 +124,22 @@ Sin embargo la definición de la serie, no nos determina su convergencia, para e
     \end{enumerate}
 \end{teorema}
 
-\begin{teorema}{Criterio de la comparación}{crit5}
+\begin{teorema}{Series $p$}{crit5}
+    Considere la serie
+    \[
+        \sum_{n=1}^{\infty} \frac{1}{n^p}.
+    \]
+
+    Entonces:
+    \[
+        \begin{cases}
+            p > 1 \quad &\Rightarrow \quad \text{converge}, \\
+            p \leq 1 \quad &\Rightarrow \quad \text{diverge}.
+        \end{cases}
+    \]
+\end{teorema}
+
+\begin{teorema}{Criterio de la comparación}{crit6}
     Sea $a_i, b_i \geq 0$ para todo $i \in \mathbb{N}$.
     \begin{enumerate}
         \item Si $a_i \leq b_i$ y 
@@ -145,25 +165,10 @@ Sin embargo la definición de la serie, no nos determina su convergencia, para e
             \lim_{n \to \infty} \frac{a_n}{b_n} = k, \quad k \in (0,\infty),
         \]
         entonces:
-        \begin{enumerate}[label=\roman*)]
+        \begin{enumerate}
             \item Si $\sum a_i$ converge $\;\Rightarrow\;$ $\sum b_i$ converge.
             \item Si $\sum a_i$ diverge $\;\Rightarrow\;$ $\sum b_i$ diverge.
         \end{enumerate}
     \end{enumerate}
-\end{teorema}
-
-\begin{teorema}{Series $p$}{crit6}
-    Considere la serie
-    \[
-        \sum_{n=1}^{\infty} \frac{1}{n^p}.
-    \]
-
-    Entonces:
-    \[
-        \begin{cases}
-            p > 1 \quad &\Rightarrow \quad \text{converge}, \\
-            p \leq 1 \quad &\Rightarrow \quad \text{diverge}.
-        \end{cases}
-    \]
 \end{teorema}
 

@@ -13,6 +13,22 @@
 \newtcbtheorem[number within=section]{notacion}{Notación}%
 {colback=blue!5!white, colframe=red!75!black, fonttitle=\bfseries}{def}
 
+\newtcolorbox{nota}{
+    enhanced,
+    breakable,
+    colback=white,
+    colframe=white,
+    coltitle=black,
+    fonttitle=\bfseries,
+    title=Nota:,
+    attach title to upper={\ },
+    borderline west={2pt}{0pt}{blue!30},
+    left=6pt,
+    right=6pt,
+    top=6pt,
+    bottom=6pt
+}
+
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\Q}{\mathbb{Q}}
