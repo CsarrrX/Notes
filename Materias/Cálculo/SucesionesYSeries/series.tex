@@ -1,18 +1,6 @@
-\documentclass[12pt,a4paper]{article}
+\section{\Large Series}
 
-% Incluye preámbulo
-\input{../../preamble.tex}
-
-% Información del documento
-\title{\Huge Series}
-\author{Cesar Perez Amador}
-\date{\today}
-
-\begin{document}
-
-\maketitle
-
-\section{Definiciones}
+\subsection{Definiciones}
 
 Ya definidas las sucesiones podemos empezar a trabajar con series: 
 
@@ -35,7 +23,7 @@ Como en sucesiones, tenemos un "problema" que resolver, en paralelo con sucesion
 
 Nota: $S_n = \{a_1, a_1 + a_2, a_1 + a_2 + a_3, \cdots \}$
 
-\section{Series conocidas}
+\subsection{Series conocidas}
 
 Nuestra primera forma de criterio de convergencia son series conocidas:
 
@@ -73,7 +61,7 @@ Sin embargo la definición de la serie, no nos determina su convergencia, para e
     Generalmente converge al primer termino, ya que se cancelan los terminos
 \end{definicion} 
 
-\section{Criterios de la convergencia}
+\subsection{Criterios de la convergencia}
 \begin{teorema}{Criterio necesario}{crit1}
     Si la serie 
     \[
@@ -131,22 +119,7 @@ Sin embargo la definición de la serie, no nos determina su convergencia, para e
     \end{enumerate}
 \end{teorema}
 
-\begin{teorema}{Series $p$}{cri5}
-    Considere la serie
-    \[
-        \sum_{n=1}^{\infty} \frac{1}{n^p}.
-    \]
-
-    Entonces:
-    \[
-        \begin{cases}
-            p > 1 \quad &\Rightarrow \quad \text{converge}, \\
-            p \leq 1 \quad &\Rightarrow \quad \text{diverge}.
-        \end{cases}
-    \]
-\end{teorema}
-
-\begin{teorema}{Criterio de la comparación}{crit6}
+\begin{teorema}{Criterio de la comparación}{crit5}
     Sea $a_i, b_i \geq 0$ para todo $i \in \mathbb{N}$.
     \begin{enumerate}
         \item Si $a_i \leq b_i$ y 
@@ -179,40 +152,18 @@ Sin embargo la definición de la serie, no nos determina su convergencia, para e
     \end{enumerate}
 \end{teorema}
 
-\begin{definicion}{Series absolutamente convergentes}{def6}
-    Una serie & $\sum a_n$ es llamada absolutamente convergente si la serie & $\sum |a_n|$ es convergente
-\end{definicion}
+\begin{teorema}{Series $p$}{crit6}
+    Considere la serie
+    \[
+        \sum_{n=1}^{\infty} \frac{1}{n^p}.
+    \]
 
-\begin{definicion}{Series absolutamente convergentes}{def6}
-    Una serie & $\sum a_n$ es llamada condicionalmente convergente si la serie & $\sum |a_n|$ es divergente
-\end{definicion}
-
-\begin{teorema}{Criterio de la absoluta convergencia}{crit7} 
-    Si una serie es absolutamente convergente entonces converge
-\end{teorema}
-
-\begin{teorema}{Criterio de la razón}{crit8}
-    Tenemos que si:
-    \[ 
-        \lim_{n \to \infty} \lvert \frac{a_{n + 1}}{a_n} \rvert 
+    Entonces:
+    \[
         \begin{cases}
-            > 1 \quad &\Rightarrow \quad \sum a_n \text{ converge}, \\
-            < 1 \quad &\Rightarrow \quad \sum a_n \text{ diverge}, \\
-            = 1 \quad &\Rightarrow \quad \text{no es concluyente}.
+            p > 1 \quad &\Rightarrow \quad \text{converge}, \\
+            p \leq 1 \quad &\Rightarrow \quad \text{diverge}.
         \end{cases}
     \]
 \end{teorema}
 
-\begin{teorema}{Criterio de la razón}{crit8}
-    Tenemos que si:
-    \[ 
-        \lim_{n \to \infty} \sqrt[n]{\lvert a_n \rvert} 
-        \begin{cases}
-            > 1 \quad &\Rightarrow \quad \sum a_n \text{ converge}, \\
-            < 1 \quad &\Rightarrow \quad \sum a_n \text{ diverge}, \\
-            = 1 \quad &\Rightarrow \quad \text{no es concluyente}.
-        \end{cases}
-    \]
-\end{teorema}
-
-\end{document}
