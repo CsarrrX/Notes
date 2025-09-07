@@ -57,7 +57,30 @@ El primer gran problema de las sucesiones es encontrar la "regla de asignación"
     \]
 \end{definicion}
 
+También tenemos definiciones para categorizar estas sucesiones, tenemos que principalmente las podemos dividir de la siguente forma:
+
+\begin{definicion}{Sucesiones monotonas}{def5}
+    \begin{enumerate}
+        \item Decimos que una sucesión es creciente si $a_n \leq a_{n + 1}$
+        \item Decimos que una sucesión es decreciente si $a_{n + 1} \leq {a_n}$
+        \item Si una sucesión es creciente o decreciente decimos que es monotona
+    \end{enumerate}
+\end{definicion}
+
+La siguiente definición es importante para un teorema de convergencia de sucesiones:
+
+\begin{definicion}{Acotamiento}{def6}
+    Decimos que un conjunto $A$ esta:
+    \begin{enumerate}
+        \item Acotado superiormente si: $\exists M \in \R: \forall a \in A, a \leq M$
+        \item Acotado inferiormente si: $\exists m \in \R: \forall a \in A, m \leq a$
+        \item Acotado si: $\exists \mathbf{M} \in \R: \forall a \in A, |a| \leq \mathbf{M}$
+    \end{enumerate}
+\end{definicion}
+
 \section{Teoremas}
+
+El primer y más importante teorema que podemos vamos a utilizar en esta sección es:
 
 \begin{teorema}{Sucesión de funciones}{thm1}
     Sea la sucesión $a_n$, si:
@@ -69,6 +92,10 @@ El primer gran problema de las sucesiones es encontrar la "regla de asignación"
         \lim_{n \to \infty} a_n = L
     \]
 \end{teorema}
+
+La idea detrás del teorema es definir una función de números reales, la cual sabemos como cálcular los límites al infinito, con la función siendo igual a la sucesión en cada número natural.\\
+
+A continuación se presentan los diferentes teoremas con los que contamos para cálcular la convergencia de sucesiones y el valor a los cuales converge.
 
 \begin{teorema}{Álgebra de sucesiones}{thm2}
     Sea $\{a_n\}$ y $\{b_n\}$ sucesiones con límites existentes, respectivamente cada límite vale $L_1$ y $L_2$ y $c\in\mathbb{R}$. Se cumple:
@@ -100,7 +127,18 @@ El primer gran problema de las sucesiones es encontrar la "regla de asignación"
 \end{teorema}
 
 \begin{teorema}{Convergencia del absoluto}{thm5}
-    Si $\lim_{n \to \infty} \lvert a_n \rvert = L$ entonces $\lim_{n \to \infty} a_n = L
+    Si $\lim_{n \to \infty} \lvert a_n \rvert = L$ entonces $\lim_{n \to \infty} a_n = L$
+\end{teorema}
+
+\begin{teorema}{Convergencia de subsucesiones}{thm6}
+    Si la sucesión $(a_n)$ es convergente el límite de cualquier subsucesión es convergente
+\end{teorema}
+
+Para el siguiente teorema necesitamos \ref{def:def5} y \ref{def:def6}:
+
+\begin{teorema}{Sucesiones acotadas y monotonas}{thm7}
+    Sea $(a_n)$ una sucesión real. 
+    Si es creciente y acotada superiormente, o decreciente y acotada inferiormente, entonces converge.
 \end{teorema}
 
 \end{document}
