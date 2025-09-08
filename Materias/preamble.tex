@@ -1,18 +1,25 @@
+\usepackage[spanish,es-noshorthands]{babel}
+
+\usepackage{xcolor}
 \usepackage[most]{tcolorbox}
 \usepackage{amsmath, amsthm, amssymb}
 \usepackage[margin=2.5cm]{geometry}
-\usepackage{hyperref}
 
-\tcbuselibrary{theorems}
+\tcbuselibrary{theorems, breakable}
 
+% Asegurar texto negro dentro de cajas y evitar "color leak"
+\tcbset{coltext=black}
+\AtBeginDocument{\color{black}}
+
+% Entornos tipo teorema: hacerlos breakable y dar prefijos únicos
 \newtcbtheorem[number within=section]{definicion}{Definición}%
-{colback=blue!5!white, colframe=blue!75!black, fonttitle=\bfseries}{def}
+{enhanced, breakable, colback=blue!5!white, colframe=blue!75!black, fonttitle=\bfseries}{def}
 \newtcbtheorem[number within=section]{teorema}{Teorema}%
-{colback=green!5!white, colframe=green!75!black, fonttitle=\bfseries}{teo}
+{enhanced, breakable, colback=green!5!white, colframe=green!75!black, fonttitle=\bfseries}{teo}
 \newtcbtheorem[number within=section]{proposicion}{Proposición}%
-{colback=yellow!10!white, colframe=yellow!50!black, fonttitle=\bfseries}{prop}
+{enhanced, breakable, colback=yellow!10!white, colframe=yellow!50!black, fonttitle=\bfseries}{prop}
 \newtcbtheorem[number within=section]{notacion}{Notación}%
-{colback=blue!5!white, colframe=red!75!black, fonttitle=\bfseries}{def}
+{enhanced, breakable, colback=blue!5!white, colframe=red!75!black, fonttitle=\bfseries}{ntc}
 
 \newtcolorbox{nota}{
     enhanced,
@@ -35,3 +42,12 @@
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
+
+% Carga hyperref al final
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=magenta
+}
