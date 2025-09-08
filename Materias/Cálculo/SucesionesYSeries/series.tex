@@ -4,7 +4,7 @@
 
 Ya definidas las sucesiones podemos empezar a trabajar con series: 
 
-\begin{definicion}{Series}{def1}
+\begin{definicion}{Series}{srs:def1}
     Una serie es la suma de los terminos de una sucesión $(a_n)$, es decir una serie esta dada por 
     \[ 
         \sum_{n = 1}^{\infty} a_n
@@ -13,7 +13,7 @@ Ya definidas las sucesiones podemos empezar a trabajar con series:
 
 Como en sucesiones, tenemos un "problema" que resolver, en paralelo con sucesiones, tenemos que determinar la convergencia de las series:
 
-\begin{definicion}{Convergencia de series}{def2}
+\begin{definicion}{Convergencia de series}{srs:def2}
     Decimos que un serie es convergente, denotado por:
     \[ 
         \lim_{n \to \infty} \sum_{i = 1}^{n} a_i = L
@@ -27,7 +27,7 @@ Nota: $S_n = \{a_1, a_1 + a_2, a_1 + a_2 + a_3, \cdots \}$
 
 Nuestra primera forma de criterio de convergencia son series conocidas:
 
-\begin{definicion}{Serie armónica}{def3}
+\begin{definicion}{Serie armónica}{srs:def3}
     Esta es la primera serie conocida, esta dada por:
     \[ 
         \sum_{n = 1}^{\infty} \frac{1}{n} 
@@ -35,7 +35,7 @@ Nuestra primera forma de criterio de convergencia son series conocidas:
     esta serie es \textbf{divergente}
 \end{definicion}
 
-\begin{definicion}{Serie geometrica}{def4}
+\begin{definicion}{Serie geometrica}{srs:def4}
     Esta serie esta dada por un número fijo por una razón elevada a la n - 1:
     \[ 
         \sum_{n = 1}^{\infty} ar^{n - 1} 
@@ -45,7 +45,7 @@ Nuestra primera forma de criterio de convergencia son series conocidas:
 
 Sin embargo la definición de la serie, no nos determina su convergencia, para eso tenemos:
 
-\begin{teorema}{Convergencia de la serie geometrica}{thm1}
+\begin{teorema}{Convergencia de la serie geometrica}{srs:thm1}
     La serie geometrica es: 
     \begin{enumerate}
         \item Convergente si $|r| < 1$
@@ -53,7 +53,7 @@ Sin embargo la definición de la serie, no nos determina su convergencia, para e
     \end{enumerate}
 \end{teorema}
 
-\begin{definicion}{Serie telescopica}{def5}
+\begin{definicion}{Serie telescopica}{srs:def5}
     Esta serie es la resta de dos terminos de la solución:
     \[ 
         \sum_{n = 1}^{\infty} a_n - a_{n + k} 
@@ -63,7 +63,7 @@ Sin embargo la definición de la serie, no nos determina su convergencia, para e
 
 \subsection{Criterios de la convergencia}
 Para determinar la convergencia de una serie tenemos diferentes criterios que podemos utilizar, el primer criterio es la condición para la convergencia de series, pero el verdadero uso es la contrarrecíproca del teorema.
-\begin{teorema}{Criterio necesario}{crit1}
+\begin{teorema}{Criterio necesario}{srs:crit1}
     Si la serie 
     \[
         \sum_{n=1}^{\infty} a_n
@@ -83,10 +83,10 @@ Para determinar la convergencia de una serie tenemos diferentes criterios que po
 \end{teorema}
 
 \begin{nota}
-    Si el limite es exactamente $0$ no podemos utilizar la contrarrecíproca (también llamada criterio de la divergencia) ya que se vuelve no concluyente, (recordemos que es una implicación). 
+    Si el limite es exactamente $0$ no podemos utilizar la contrarrecíproca (también llamada criterio de la divergencia) ya que se vuelve no concluyente, (recordemos que es una implicación), es decir, que el limite sea $0$ no implica que la serie converga. Un contraejemplo de esto es la serie armonica: \ref{def:srs:def3}
 \end{nota}
 
-\begin{teorema}{Prueba de la integral}{crit2}
+\begin{teorema}{Prueba de la integral}{srs:crit2}
     Suponga que $f$ es continua, positiva y decreciente en un intervalo $[1, \infty)$.  
     Si $a_n = f(n)$, entonces la serie
     \[
@@ -98,7 +98,7 @@ Para determinar la convergencia de una serie tenemos diferentes criterios que po
     \]
 \end{teorema}
 
-\begin{teorema}{Series alternantes}{crit3}
+\begin{teorema}{Series alternantes}{srs:crit3}
     Una serie alternante es de la forma:
     \[
         \sum_{i=1}^{\infty} (-1)^n b_n = -b_1 + b_2 - b_3 + b_4 - \cdots
@@ -113,7 +113,7 @@ Para determinar la convergencia de una serie tenemos diferentes criterios que po
     \]
 \end{teorema}
 
-\begin{teorema}{Álgebra de series}{crit4}
+\begin{teorema}{Álgebra de series}{srs:crit4}
     Si las series $\sum a_n$ y $\sum b_n$ son convergentes, entonces:
     \begin{enumerate}
         \item $\sum (a_n + b_n)$ converge.
@@ -124,7 +124,7 @@ Para determinar la convergencia de una serie tenemos diferentes criterios que po
     \end{enumerate}
 \end{teorema}
 
-\begin{teorema}{Series $p$}{crit5}
+\begin{teorema}{Series $p$}{srs:crit5}
     Considere la serie
     \[
         \sum_{n=1}^{\infty} \frac{1}{n^p}.
@@ -139,7 +139,7 @@ Para determinar la convergencia de una serie tenemos diferentes criterios que po
     \]
 \end{teorema}
 
-\begin{teorema}{Criterio de la comparación}{crit6}
+\begin{teorema}{Criterio de la comparación}{srs:crit6}
     Sea $a_i, b_i \geq 0$ para todo $i \in \mathbb{N}$.
     \begin{enumerate}
         \item Si $a_i \leq b_i$ y 

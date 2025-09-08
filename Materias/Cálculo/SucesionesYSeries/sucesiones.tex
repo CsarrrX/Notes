@@ -3,18 +3,18 @@
 \subsection{Definiciones}
 Muy informalmente podemos decir que una sucesión es una "lista ordenada" de valores númericos, cada uno relacionado con su índice (un número natural), es decir, una sucesión tiene la forma: $a_n = \{a_1, a_2, a_3, a_4, ...\}$, en donde $a_i \in \R$ para $i \in \N$ para formalizar esta idea, introducimos las siguientes definiciones:
 
-\begin{definicion}{Función sobreyectiva}{def1}
+\begin{definicion}{Función sobreyectiva}{suc:def1}
     Sea $f: A \to B$. Decimos que $f$ es sobreyectiva si 
     \[
         \forall b \in B, \exists a \in A: f(a) = b
     \]
 \end{definicion}
 
-\begin{definicion}{Sucesión}{def2}
+\begin{definicion}{Sucesión}{suc:def2}
     Una sucesión es una función (sobreyectiva) sobre los naturales de la forma $f: \N \to \R$ 
 \end{definicion}
 
-\begin{notacion}{}{ntc1}
+\begin{notacion}{}{suc:ntc1}
     Denotamos las sucesiones de las siguientes formas:
     \[ 
         a_n \equiv \{a_n\} \equiv \{a_n\}_{n = 1}^{\infty} \equiv f(n) \equiv (a_n)
@@ -23,7 +23,7 @@ Muy informalmente podemos decir que una sucesión es una "lista ordenada" de val
 
 El primer gran problema de las sucesiones es encontrar la "regla de asignación" es decir la forma de la función que caracteriza a los terminos $n$ de la sucesión. (Notas de OneNote para los ejemplos). Sin embargo, el problema que se roba el espectaculo es el problema de convergencia de sucesiones. O en otras palabras la existencia del límite: 
     
-\begin{definicion}{Límite de una sucesión}{def3}
+\begin{definicion}{Límite de una sucesión}{suc:def3}
     Decimos que la sucesión $a_n$ tiene límite L, denotado por
     \[ 
         \lim_{n \to \infty} a_n = L
@@ -34,7 +34,7 @@ El primer gran problema de las sucesiones es encontrar la "regla de asignación"
     \]
 \end{definicion}
 
-\begin{definicion}{Sucesiones de Cauchy}{def4}
+\begin{definicion}{Sucesiones de Cauchy}{suc:def4}
     Decimos que la sucesión $a_n$ tiene límite L, denotado por
     \[ 
         \lim_{n \to \infty} a_n = L
@@ -45,9 +45,13 @@ El primer gran problema de las sucesiones es encontrar la "regla de asignación"
     \]
 \end{definicion}
 
+\begin{nota}
+    Ambas definiciones son equivalentes, la idea es a partir de un N la distancia entre terminos es menor a $\varepsilon$
+\end{nota}
+
 También tenemos definiciones para categorizar estas sucesiones, tenemos que principalmente las podemos dividir de la siguente forma:
 
-\begin{definicion}{Sucesiones monotonas}{def5}
+\begin{definicion}{Sucesiones monotonas}{suc:def5}
     \begin{enumerate}
         \item Decimos que una sucesión es creciente si $a_n \leq a_{n + 1}$
         \item Decimos que una sucesión es decreciente si $a_{n + 1} \leq {a_n}$
@@ -57,7 +61,7 @@ También tenemos definiciones para categorizar estas sucesiones, tenemos que pri
 
 La siguiente definición es importante para un teorema de convergencia de sucesiones:
 
-\begin{definicion}{Acotamiento}{def6}
+\begin{definicion}{Acotamiento}{suc:def6}
     Decimos que un conjunto $A$ esta:
     \begin{enumerate}
         \item Acotado superiormente si: $\exists M \in \R: \forall a \in A, a \leq M$
@@ -74,7 +78,7 @@ La siguiente definición es importante para un teorema de convergencia de sucesi
 
 El primer y más importante teorema que podemos vamos a utilizar en esta sección es:
 
-\begin{teorema}{Sucesión de funciones}{thm1}
+\begin{teorema}{Sucesión de funciones}{suc:thm1}
     Sea la sucesión $a_n$, si:
     \[ 
         \lim_{n \to \infty} f(x) = L \text{ y } f(n) = a_n, \forall n \in \N
@@ -91,7 +95,7 @@ El primer y más importante teorema que podemos vamos a utilizar en esta secció
 
 A continuación se presentan los diferentes teoremas con los que contamos para cálcular la convergencia de sucesiones y el valor a los cuales converge.
 
-\begin{teorema}{Álgebra de sucesiones}{thm2}
+\begin{teorema}{Álgebra de sucesiones}{suc:thm2}
     Sea $\{a_n\}$ y $\{b_n\}$ sucesiones con límites existentes, respectivamente cada límite vale $L_1$ y $L_2$ y $c\in\mathbb{R}$. Se cumple:
     \[
     \begin{aligned}
@@ -105,7 +109,7 @@ A continuación se presentan los diferentes teoremas con los que contamos para c
     \]
 \end{teorema}
 
-\begin{teorema}{Criterio del punto fijo}{thm3}
+\begin{teorema}{Criterio del punto fijo}{suc:thm3}
     Sea $(a_n)$ una sucesión, y supongamos que $\lim_{n \to \infty} a_n = L$. Se cumple que:
     \[ 
         \lim_{n \to \infty} a_n = \lim_{n \to \infty} a_{n + 1} = L
@@ -113,22 +117,22 @@ A continuación se presentan los diferentes teoremas con los que contamos para c
     En particular si $a_{n + 1} = f(a_n)$ con $f$ continua, se da que $L = f(L)$
 \end{teorema}
 
-\begin{teorema}{Compresión de sucesiones}{thm4}
+\begin{teorema}{Compresión de sucesiones}{suc:thm4}
     Si $\lim_{n \to \infty} a_n = L = \lim_{n \to \infty} c_n$ y $a_n \leq b_n \leq c_n$ entonces
     \[ 
         \lim_{n \to \infty} b_n = L
     \]
 \end{teorema}
 
-\begin{teorema}{Convergencia del absoluto}{thm5}
+\begin{teorema}{Convergencia del absoluto}{suc:thm5}
     Si $\lim_{n \to \infty} \lvert a_n \rvert = L$ entonces $\lim_{n \to \infty} a_n = L$
 \end{teorema}
 
-\begin{teorema}{Convergencia de subsucesiones}{thm6}
+\begin{teorema}{Convergencia de subsucesiones}{suc:thm6}
     Si la sucesión $(a_n)$ es convergente el límite de cualquier subsucesión es convergente
 \end{teorema}
 
-\begin{teorema}{Sucesiones acotadas y monotonas}{thm7}
+\begin{teorema}{Sucesiones acotadas y monotonas}{suc:thm7}
     Sea $(a_n)$ una sucesión real. 
     Si es creciente y acotada superiormente, o decreciente y acotada inferiormente, entonces converge.
 \end{teorema}
